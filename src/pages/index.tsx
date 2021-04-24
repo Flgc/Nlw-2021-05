@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import { GetStaticProps } from 'next'; //Realiza a tipagem por completo da função (parametros e retorno) -> Integração do TypeScript
 
 import Image from 'next/image';
@@ -6,6 +7,7 @@ import { format, parseISO } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import { api } from '../services/api';
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
+import { PlayerContext } from '../contexts/PlayerContext';
 
 import styles from './home.module.scss';
 
@@ -28,10 +30,12 @@ type HomeProps = {
 };
 
 export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
+  const { play } = useContext(PlayerContext);
+
   return (
     <div className={styles.homepage}>
       <section className={styles.latestEpisodes}>
-        <h2>Últimos Lançamentos</h2>
+        <h2>Últimos Lançamentos </h2>
 
         <ul>
           {latestEpisodes.map((episode) => {
@@ -54,7 +58,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                   <span>{episode.durationAsString}</span>
                 </div>
 
-                <button type="button">
+                <button type="button" onClick={() => play(episode)}>
                   <img src="/play-green.svg" alt="Tocar episódio" />
                 </button>
               </li>
