@@ -26,8 +26,8 @@
 
 [**Sobre**](https://github.com/Flgc/Nlw-2021-05#-sobre-o-projeto) &nbsp;&nbsp;**|**&nbsp;&nbsp;
 [**Demonstração**](https://github.com/Flgc/Nlw-2021-05#-demonstra%C3%A7%C3%A3o-web) &nbsp;&nbsp;**|**&nbsp;&nbsp;
-[**Como instalar e executar o projeto**](https://github.com/Flgc/sds2#-como-instalar-e-executar-o-projeto) &nbsp;&nbsp;**|**&nbsp;&nbsp;
-[**Contato**](https://github.com/Flgc/sds2#-contato) &nbsp;&nbsp;**|**&nbsp;&nbsp;
+[**Como instalar e executar o projeto**](https://github.com/Flgc/Nlw-2021-05#-como-instalar-e-executar-o-projeto) &nbsp;&nbsp;**|**&nbsp;&nbsp;
+[**Contato**](https://github.com/Flgc/Nlw-2021-05#-contato) &nbsp;&nbsp;**|**&nbsp;&nbsp;
 
 </div><br><br>
 
